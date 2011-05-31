@@ -1,6 +1,6 @@
 Install:
 
-1. clone into ~/.vimrc
+1. clone into ~/.vim
 $ git clone http://github.com/janerist/vim-setup.git ~/.vim
 
 2. symlink .vimrc
@@ -10,7 +10,10 @@ $ ln -s ~/.vim/.vimrc ~/.vimrc
 $ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 4. install bundles
-:BundleInstall from within VIM
+$ vim +BundleInstall! +q
 
-5. Command-T needs to be built
-$ cd ~/.vim/bundles/Command-T && rake make (requires Ruby and Rake)
+6. setup bundles
+ a) Command-T
+    $ cd ~/.vim/bundles/Command-T && rake make (requires Ruby and Rake)
+ b) pyflakes
+    $ cd ~/.vim/bundles/pyflakes-vim && git submodule init && git submodule update

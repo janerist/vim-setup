@@ -1,0 +1,16 @@
+Install:
+
+1. clone into ~/.vimrc
+$ git clone http://github.com/janerist/vim-setup.git ~/.vim
+
+2. symlink .vimrc
+$ ln -s ~/.vim/.vimrc ~/.vimrc
+
+3. get Vundle
+$ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+4. install bundles
+:BundleInstall from within VIM
+
+5. Command-T needs to be built
+$ cd ~/.vim/bundles/Command-T && rake make (requires Ruby and Rake)

@@ -43,6 +43,7 @@ filetype on
 filetype plugin indent on
 let g:pep8_map='<leader>8'
 au FileType python set omnifunc=pythoncomplete#Complete
+au FileType css set omnifunc=csscomplete#CompleteCSS
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 map <leader>n :NERDTreeToggle<CR>
@@ -61,10 +62,18 @@ set ai
 set si
 
 au BufNewFile,BufRead *.mako set ft=mako
-set gfn=Inconsolata\ 12
+set gfn=Inconsolata\ 14
 
 """"""""""""""""""""
 " Command-T
 """"""""""""""""""""
 set wildignore+=*.pyc
+
+""""""""""""""""""""
+" minibufexpl 
+""""""""""""""""""""
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 

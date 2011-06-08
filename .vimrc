@@ -23,9 +23,7 @@ Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'sontek/rope-vim'
-
-"vim-scripts
-Bundle 'mako.vim'
+Bundle 'sophacles/vim-bundle-mako'
 
 set foldmethod=indent
 set foldlevel=99

@@ -65,7 +65,7 @@ set gfn=Inconsolata\ 14
 """"""""""""""""""""
 " Command-T
 """"""""""""""""""""
-set wildignore+=*.pyc
+set wildignore+=*.pyc,*.swp,*.mako.py
 
 """"""""""""""""""""
 " minibufexpl 

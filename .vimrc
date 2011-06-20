@@ -75,3 +75,4 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

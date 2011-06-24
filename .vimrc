@@ -1,4 +1,5 @@
 set nocompatible
+set modelines=0
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -52,15 +53,59 @@ map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
 
 set background=dark
 set number
-colorscheme wombat
+colorscheme molokai
 set expandtab
 set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 set smarttab
 set ai
 set si
 
+set encoding=utf-8
+set scrolloff=3
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+inoremap jj <ESC>
+
 au BufNewFile,BufRead *.mako set ft=mako
-set gfn=Inconsolata\ 14
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+set gfn=Inconsolata\ 10
+
 
 """"""""""""""""""""
 " Command-T
@@ -75,4 +120,3 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

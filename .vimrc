@@ -104,7 +104,10 @@ inoremap jj <ESC>
 au BufNewFile,BufRead *.mako set ft=mako
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
-set gfn=Inconsolata\ 10
+set gfn=Inconsolata\ 12
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
 
 
 """"""""""""""""""""

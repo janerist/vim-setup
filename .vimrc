@@ -19,8 +19,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'fs111/pydoc.vim'
 Bundle 'vim-scripts/pep8'
-Bundle 'alfredodeza/pytest.vim'
-Bundle 'reinh/vim-makegreen'
 Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'sontek/rope-vim'
@@ -41,16 +39,14 @@ syntax on
 filetype on
 filetype plugin indent on
 let g:pep8_map='<leader>8'
-au FileType python set omnifunc=pythoncomplete#Complete
-au FileType css set omnifunc=csscomplete#CompleteCSS
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 map <leader>n :NERDTreeToggle<CR>
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 nmap <leader>a <Esc>:Ack!
-map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
 
+scriptencoding=utf-8
 set background=dark
 set number
 colorscheme molokai
@@ -62,7 +58,6 @@ set smarttab
 set ai
 set si
 
-set encoding=utf-8
 set scrolloff=3
 set showmode
 set showcmd
@@ -73,6 +68,7 @@ set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
+set directory=/tmp/ 
 set laststatus=2
 
 nnoremap / /\v
@@ -86,7 +82,6 @@ set hlsearch
 nnoremap <leader><space> :noh<cr>
 
 set wrap
-set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
@@ -101,14 +96,20 @@ inoremap <right> <nop>
 
 inoremap jj <ESC>
 
-au BufNewFile,BufRead *.mako set ft=mako
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+augroup myfiletypes
+    autocmd!
+    
+    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
-set gfn=Inconsolata\ 12
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
+    au BufNewFile,BufRead *.mako set ft=mako
+augroup END
 
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 
 """"""""""""""""""""
 " Command-T
@@ -123,3 +124,11 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+""""""""""""""""""""
+" NERDtree 
+""""""""""""""""""""
+let NERDTreeQuitOnOpen = 1
+let NERDChristmasTree = 1
+let NERDTreeHighlighCursorline = 1
+let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.git', '\.hg']

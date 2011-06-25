@@ -3,8 +3,9 @@ Install:
 1. clone into ~/.vim
 $ git clone http://github.com/janerist/vim-setup.git ~/.vim
 
-2. symlink .vimrc
+2. symlink .vimrc and .gvimrc
 $ ln -s ~/.vim/.vimrc ~/.vimrc
+$ ln -s ~/.vim/.gvimrc ~/.gvimrc
 
 3. get Vundle
 $ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

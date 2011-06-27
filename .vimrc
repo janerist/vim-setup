@@ -23,6 +23,10 @@ Bundle 'vim-scripts/TaskList.vim'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'sontek/rope-vim'
 Bundle 'sophacles/vim-bundle-mako'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'hallettj/jslint.vim'
+Bundle 'jamescarr/snipmate-nodejs'
+Bundle 'pangloss/vim-javascript'
 
 set foldmethod=indent
 set foldlevel=99
@@ -114,7 +118,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 """"""""""""""""""""
 " Command-T
 """"""""""""""""""""
-set wildignore+=*.pyc,*.swp,*.mako.py
+set wildignore+=*.pyc,*.swp,*.mako.py,node_modules
 
 """"""""""""""""""""
 " minibufexpl 

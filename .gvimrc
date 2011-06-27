@@ -4,4 +4,4 @@ set guioptions-=T
 set guioptions-=r
 
 set lines=50
-set columns=80
+set columns=89

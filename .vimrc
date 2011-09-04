@@ -53,7 +53,7 @@ nmap <leader>a <Esc>:Ack!
 scriptencoding=utf-8
 set background=dark
 set number
-colorscheme molokai
+colorscheme wombat
 set expandtab
 set shiftwidth=4
 set tabstop=4

@@ -1,4 +1,4 @@
-set guifont=Inconsolata\ 12
+set guifont=Monaco\ 11 
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r

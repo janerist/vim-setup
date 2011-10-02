@@ -31,6 +31,8 @@ Bundle 'pangloss/vim-javascript'
 set foldmethod=indent
 set foldlevel=99
 
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P\ %{fugitive#statusline()}
+
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l

@@ -50,7 +50,6 @@ nmap <leader>a <Esc>:Ack!
 scriptencoding=utf-8
 set background=dark
 set number
-colorscheme wombat
 set expandtab
 set shiftwidth=4
 set tabstop=4
@@ -65,7 +64,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start

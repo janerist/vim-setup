@@ -49,6 +49,7 @@ nmap <leader>a <Esc>:Ack!
 
 scriptencoding=utf-8
 set background=dark
+colorscheme wombat
 set number
 set expandtab
 set shiftwidth=4

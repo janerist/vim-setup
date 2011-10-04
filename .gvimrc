@@ -1,4 +1,3 @@
-colorscheme wombat
 
 set guifont=Monaco\ 10
 set guioptions-=m

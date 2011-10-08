@@ -1,5 +1,4 @@
-set nocompatible
-set modelines=0
+
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -16,7 +15,8 @@ Bundle 'sontek/minibufexpl.vim'
 Bundle 'wincent/Command-T'
 Bundle 'mileszs/ack.vim'
 Bundle 'sjl/gundo.vim'
-Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'hallettj/jslint.vim'
@@ -32,6 +32,8 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
+
+nnoremap <silent> <esc> :noh<return><esc>
 
 map <leader>td <Plug>TaskList
 map <leader>g :GundoToggle<CR>

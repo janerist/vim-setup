@@ -1,10 +1,9 @@
 
-filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" GitHub
+" Plugins
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'msanders/snipmate.vim'
@@ -17,11 +16,16 @@ Bundle 'mileszs/ack.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'sophacles/vim-bundle-mako'
+
+"JavaScript/node.js plugins
 Bundle 'digitaltoad/vim-jade'
 Bundle 'hallettj/jslint.vim'
-Bundle 'jamescarr/snipmate-nodejs'
 Bundle 'pangloss/vim-javascript'
+Bundle 'jamescarr/snipmate-nodejs'
+
+"Python plugins
+Bundle 'sophacles/vim-bundle-mako'
+Bundle 'kevinw/pyflakes-vim'
 
 set foldmethod=indent
 set foldlevel=99
@@ -33,20 +37,14 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-nnoremap <silent> <esc> :noh<return><esc>
-
-map <leader>td <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 
 syntax on
 filetype on
 filetype plugin indent on
-let g:pep8_map='<leader>8'
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 map <leader>n :NERDTreeToggle<CR>
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
 nmap <leader>a <Esc>:Ack!
 
 scriptencoding=utf-8

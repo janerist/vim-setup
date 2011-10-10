@@ -16,3 +16,5 @@ $ vim +BundleInstall! +q
 6. setup bundles
  a) Command-T
     $ cd ~/.vim/bundle/Command-T && rake make (requires Ruby)
+ b) pyflakes-vim
+    $ cd ~/.vim/bundle/pyflakes-vim && git submodule init && git submodule update
